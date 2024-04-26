@@ -1,38 +1,38 @@
 FILEREAD_OK              |                  | 0                   |                     |
 > token dump:
-0), mov
+0), push
 1), cx
-2), 0
-3), call
-4), Elbasy
-5), push
-6), dx
-7), out
-8), halt
-9), Elbasy:
-10), push
-11), 9.000000
-12), pop
-13), [cx+0]
-14), push
-15), 1.000000
-16), pop
-17), [cx+1]
-18), push
-19), 0.000000
-20), pop
-21), [cx+2]
-22), push
-23), 0.000000
-24), pop
-25), [cx+3]
-26), S0x4de8960:
+2), call
+3), Elbasy
+4), out
+5), halt
+6), Elbasy:
+7), F0x4de5f10:
+8), push
+9), 9.000000
+10), pop
+11), [cx+0]
+12), push
+13), 1.000000
+14), pop
+15), [cx+1]
+16), push
+17), 0.000000
+18), pop
+19), [cx+2]
+20), push
+21), 0.000000
+22), pop
+23), [cx+3]
+24), S0x4de8960:
+25), push
+26), [cx+0]
 27), push
-28), [cx+0]
-29), push
-30), 0
-31), je
-32), L0x4de8960
+28), 0.000000
+29), je
+30), L0x4de8960
+31), pop
+32), bx
 33), push
 34), [cx+2]
 35), push
@@ -58,10 +58,10 @@ FILEREAD_OK              |                  | 0                   |             
 55), jmp
 56), S0x4de8960
 57), L0x4de8960:
-58), push
-59), [cx+3]
-60), pop
-61), dx
+58), pop
+59), bx
+60), push
+61), [cx+3]
 62), mov
 63), [cx+0]
 64), 0
@@ -74,161 +74,159 @@ FILEREAD_OK              |                  | 0                   |             
 71), mov
 72), [cx+3]
 73), 0
-74), mov
-75), cx
-76), ax
-77), mov
-78), ax
-79), 0
+74), pop
+75), ax
+76), pop
+77), cx
+78), push
+79), ax
 80), ret
 dump ended
 CMD_PUSHED_IN_BYTECODE   | 0x02             | 2                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 3                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2180             | 11                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 13                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x03             | 19                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x07             | 20                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x0F             | 21                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2180             | 3                   |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 5                   |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x07             | 9                   |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x0F             | 10                  |                     |
 LABEL_INSERTED           | Elbasy           | 0                   |                     |
+LABEL_INSERTED           | F0x4de5f10       | 0                   |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 13                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 23                  |                     |
 NUMBER_PUSHED_IN_BYTECODE| 0                | 24                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 34                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 35                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 41                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 51                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 52                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 58                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 30                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 40                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 41                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 47                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 57                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 58                  |                     |
 MEM_RLC_OK               |                  | 0                   |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 68                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 69                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 75                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 85                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 86                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 64                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 74                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 75                  |                     |
 LABEL_INSERTED           | S0x4de8960       | 0                   |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 92                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 93                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 99                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2187             | 107                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 109                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 115                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 116                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 81                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 82                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 88                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2187             | 96                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 98                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x01             | 104                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 107                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 108                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 114                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 115                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 119                 |                     |
 CMD_PUSHED_IN_BYTECODE   | 0x02             | 122                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 123                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 127                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 130                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 131                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 137                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 138                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 144                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 145                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 151                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 152                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 158                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 159                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 123                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 129                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 130                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 136                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 137                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 143                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 144                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 150                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 151                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 157                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 158                 |                     |
 MEM_RLC_OK               |                  | 0                   |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 165                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 166                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 172                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x03             | 180                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 183                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 184                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2182             | 188                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 164                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x03             | 172                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 175                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 176                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2182             | 180                 |                     |
 LABEL_DETECTED           | S0x4de8960       | 0                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 90               | 190                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 79               | 182                 |                     |
 LABEL_INSERTED           | L0x4de8960       | 0                   |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 196                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 197                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x03             | 203                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 206                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 207                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 211                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 221                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 222                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 226                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 236                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 237                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 241                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 251                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 252                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 256                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 266                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x00             | 267                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x00             | 270                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 271                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x09             | 279                 |                     |
-Compilation done         |                  | 280                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x01             | 188                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 191                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 192                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 198                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 199                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 203                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 213                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 214                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 218                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 228                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 229                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 233                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 243                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 244                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 248                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x00             | 258                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 261                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x00             | 264                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x09             | 265                 |                     |
+Compilation done         |                  | 266                 |                     |
 CMD_PUSHED_IN_BYTECODE   | 0x02             | 2                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 3                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2180             | 11                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2180             | 3                   |                     |
 LABEL_DETECTED           | Elbasy           | 0                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 22               | 13                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x03             | 19                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x07             | 20                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x0F             | 21                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 11               | 5                   |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x07             | 9                   |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x0F             | 10                  |                     |
 LABEL_DETECTED           | Elbasy           | 0                   |                     |
+LABEL_DETECTED           | F0x4de5f10       | 0                   |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 13                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 23                  |                     |
 NUMBER_PUSHED_IN_BYTECODE| 0                | 24                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 34                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 35                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 41                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 51                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 52                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 58                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 68                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 69                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 75                  |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 85                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 86                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 30                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 40                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 41                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 47                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 57                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 58                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 64                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 74                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 75                  |                     |
 LABEL_DETECTED           | S0x4de8960       | 0                   |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 92                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 93                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 99                  |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2187             | 107                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 81                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 82                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 88                  |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2187             | 96                  |                     |
 LABEL_DETECTED           | L0x4de8960       | 0                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 194              | 109                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 115                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 116                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 186              | 98                  |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x01             | 104                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 107                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 108                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 114                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 115                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 119                 |                     |
 CMD_PUSHED_IN_BYTECODE   | 0x02             | 122                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 123                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 127                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 130                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 131                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 137                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 138                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 144                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 145                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 151                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 152                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 158                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 159                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 165                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 166                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 172                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x03             | 180                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 183                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 184                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2182             | 188                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 123                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 129                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 130                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 136                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 137                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 143                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 144                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 150                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 151                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 157                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 158                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 164                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x03             | 172                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 175                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 176                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2182             | 180                 |                     |
 LABEL_DETECTED           | S0x4de8960       | 0                   |                     |
-NUMBER_PUSHED_IN_BYTECODE| 90               | 190                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 79               | 182                 |                     |
 LABEL_DETECTED           | L0x4de8960       | 0                   |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 196                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 197                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x03             | 203                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 206                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 207                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 211                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 221                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 1                | 222                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 226                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 236                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 2                | 237                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 241                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 251                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 3                | 252                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 256                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x02             | 266                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x00             | 267                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x00             | 270                 |                     |
-NUMBER_PUSHED_IN_BYTECODE| 0                | 271                 |                     |
-CMD_PUSHED_IN_BYTECODE   | 0x09             | 279                 |                     |
-Compilation done         |                  | 280                 |                     |
-COMP_TIME                | 542427           | 280                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x01             | 188                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 191                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 192                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 198                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 199                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 203                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 213                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 1                | 214                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 218                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 228                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 2                | 229                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 233                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 243                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 3                | 244                 |                     |
+NUMBER_PUSHED_IN_BYTECODE| 0                | 248                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x00             | 258                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x02             | 261                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x00             | 264                 |                     |
+CMD_PUSHED_IN_BYTECODE   | 0x09             | 265                 |                     |
+Compilation done         |                  | 266                 |                     |
+COMP_TIME                | 541391           | 266                 |                     |
 > closing logfile

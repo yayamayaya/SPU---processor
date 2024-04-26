@@ -1,1506 +1,1566 @@
 > reading a bytecode file
 > initialising stacks
 > starting command sequence
-> got command: 0x93
+> got command: 0x81
 > current position is 1
-> got command: 0x21
+> got command: 0x02
 > current position is 2
 > taking an argument:
 > got command: 0x02
 > current position is 3
 > argument taken is: 0.000000
-> taking an argument:
-> got command: 0000
-> current position is 11
-> argument taken is: 0.000000
 > got command: 0x84
-> current position is 12
+> current position is 4
 > got command: 0x08
+> current position is 5
+> taking an argument:
+> got command: 0x0b
+> current position is 9
+> argument taken is: 0.000000
+> got command: 0x81
+> current position is 12
+> got command: 0x01
 > current position is 13
 > taking an argument:
-> got command: 0x16
-> current position is 17
-> argument taken is: 0.000000
-> got command: 0x81
-> current position is 23
-> got command: 0x01
-> current position is 24
-> taking an argument:
 > got command: 0000
-> current position is 32
+> current position is 21
 > argument taken is: 9.000000
 > got command: 0x82
-> current position is 33
+> current position is 22
 > got command: 0x07
-> current position is 34
+> current position is 23
 > taking an argument:
 > got command: 0x02
-> current position is 35
+> current position is 24
 > got command: 0000
-> current position is 39
+> current position is 28
 > argument taken is: 0.000000
 > got command: 0x81
-> current position is 40
+> current position is 29
 > got command: 0x01
-> current position is 41
+> current position is 30
 > taking an argument:
 > got command: 0000
-> current position is 49
+> current position is 38
 > argument taken is: 1.000000
 > got command: 0x82
-> current position is 50
+> current position is 39
 > got command: 0x07
-> current position is 51
+> current position is 40
 > taking an argument:
 > got command: 0x02
-> current position is 52
+> current position is 41
 > got command: 0x01
+> current position is 45
+> argument taken is: 0.000000
+> got command: 0x81
+> current position is 46
+> got command: 0x01
+> current position is 47
+> taking an argument:
+> got command: 0000
+> current position is 55
+> argument taken is: 0.000000
+> got command: 0x82
 > current position is 56
-> argument taken is: 0.000000
-> got command: 0x81
+> got command: 0x07
 > current position is 57
-> got command: 0x01
+> taking an argument:
+> got command: 0x02
 > current position is 58
-> taking an argument:
-> got command: 0000
-> current position is 66
-> argument taken is: 0.000000
-> got command: 0x82
-> current position is 67
-> got command: 0x07
-> current position is 68
-> taking an argument:
 > got command: 0x02
-> current position is 69
-> got command: 0x02
-> current position is 73
+> current position is 62
 > argument taken is: 0.000000
 > got command: 0x81
-> current position is 74
+> current position is 63
 > got command: 0x01
-> current position is 75
+> current position is 64
 > taking an argument:
 > got command: 0000
-> current position is 83
+> current position is 72
 > argument taken is: 0.000000
 > got command: 0x82
-> current position is 84
+> current position is 73
 > got command: 0x07
-> current position is 85
+> current position is 74
 > taking an argument:
 > got command: 0x02
-> current position is 86
+> current position is 75
 > got command: 0x03
-> current position is 90
+> current position is 79
 > argument taken is: 0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 9.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 9.00 and 0.00
-> got command: 0x81
-> current position is 114
-> got command: 0x07
-> current position is 115
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
 > taking an argument:
-> got command: 0x02
-> current position is 116
-> got command: 0x02
-> current position is 120
+> got command: 0x01
+> current position is 105
 > argument taken is: 0.000000
 > got command: 0x81
-> current position is 121
+> current position is 106
 > got command: 0x07
-> current position is 122
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 108
+> got command: 0x02
+> current position is 112
+> argument taken is: 0.000000
+> got command: 0x81
+> current position is 113
+> got command: 0x07
+> current position is 114
+> taking an argument:
+> got command: 0x02
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 1.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 0.00 and 1.00
 > got command: 0x82
+> current position is 121
+> got command: 0x07
+> current position is 122
+> taking an argument:
+> got command: 0x02
+> current position is 123
+> got command: 0x03
+> current position is 127
+> argument taken is: 0.000000
+> got command: 0x81
+> current position is 128
+> got command: 0x07
 > current position is 129
-> got command: 0x07
+> taking an argument:
+> got command: 0x02
 > current position is 130
-> taking an argument:
-> got command: 0x02
-> current position is 131
-> got command: 0x03
+> got command: 0x01
+> current position is 134
+> argument taken is: 1.000000
+> got command: 0x82
 > current position is 135
-> argument taken is: 0.000000
-> got command: 0x81
+> got command: 0x07
 > current position is 136
-> got command: 0x07
+> taking an argument:
+> got command: 0x02
 > current position is 137
-> taking an argument:
 > got command: 0x02
-> current position is 138
-> got command: 0x01
-> current position is 142
-> argument taken is: 1.000000
-> got command: 0x82
-> current position is 143
-> got command: 0x07
-> current position is 144
-> taking an argument:
-> got command: 0x02
-> current position is 145
-> got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 0.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 1.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 1.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 9.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 9.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 9.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 8.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 8.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 9.000000
 > got command: 0x81
-> current position is 114
+> current position is 106
 > got command: 0x07
-> current position is 115
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 116
+> current position is 108
 > got command: 0x02
-> current position is 120
+> current position is 112
 > argument taken is: 1.000000
 > got command: 0x81
+> current position is 113
+> got command: 0x07
+> current position is 114
+> taking an argument:
+> got command: 0x02
+> current position is 115
+> got command: 0x01
+> current position is 119
+> argument taken is: 1.000000
+> got command: 0x02
+> current position is 120
+> doing arithmetical operation:
+> arithm operation with 1.00 and 1.00
+> got command: 0x82
 > current position is 121
 > got command: 0x07
 > current position is 122
 > taking an argument:
 > got command: 0x02
 > current position is 123
-> got command: 0x01
+> got command: 0x03
 > current position is 127
 > argument taken is: 1.000000
-> got command: 0x02
+> got command: 0x81
 > current position is 128
-> doing arithmetical operation:
-> arithm operation with 1.00 and 1.00
-> got command: 0x82
+> got command: 0x07
 > current position is 129
-> got command: 0x07
+> taking an argument:
+> got command: 0x02
 > current position is 130
-> taking an argument:
-> got command: 0x02
-> current position is 131
-> got command: 0x03
-> current position is 135
-> argument taken is: 1.000000
-> got command: 0x81
-> current position is 136
-> got command: 0x07
-> current position is 137
-> taking an argument:
-> got command: 0x02
-> current position is 138
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 1.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 1.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 2.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 1.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 8.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 8.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 8.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 7.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 7.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 8.000000
 > got command: 0x81
-> current position is 114
+> current position is 106
 > got command: 0x07
-> current position is 115
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 116
+> current position is 108
 > got command: 0x02
-> current position is 120
+> current position is 112
 > argument taken is: 1.000000
 > got command: 0x81
-> current position is 121
+> current position is 113
 > got command: 0x07
-> current position is 122
+> current position is 114
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 2.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 1.00 and 2.00
 > got command: 0x82
-> current position is 129
+> current position is 121
 > got command: 0x07
-> current position is 130
+> current position is 122
 > taking an argument:
 > got command: 0x02
-> current position is 131
+> current position is 123
 > got command: 0x03
-> current position is 135
+> current position is 127
 > argument taken is: 2.000000
 > got command: 0x81
-> current position is 136
+> current position is 128
 > got command: 0x07
-> current position is 137
+> current position is 129
 > taking an argument:
 > got command: 0x02
-> current position is 138
+> current position is 130
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 2.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 1.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 3.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 2.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 7.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 7.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 7.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 6.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 6.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 7.000000
 > got command: 0x81
-> current position is 114
+> current position is 106
 > got command: 0x07
-> current position is 115
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 116
+> current position is 108
 > got command: 0x02
-> current position is 120
+> current position is 112
 > argument taken is: 2.000000
 > got command: 0x81
-> current position is 121
+> current position is 113
 > got command: 0x07
-> current position is 122
+> current position is 114
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 3.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 2.00 and 3.00
 > got command: 0x82
-> current position is 129
+> current position is 121
 > got command: 0x07
-> current position is 130
+> current position is 122
 > taking an argument:
 > got command: 0x02
-> current position is 131
+> current position is 123
 > got command: 0x03
-> current position is 135
+> current position is 127
 > argument taken is: 3.000000
 > got command: 0x81
-> current position is 136
+> current position is 128
 > got command: 0x07
-> current position is 137
+> current position is 129
 > taking an argument:
 > got command: 0x02
-> current position is 138
+> current position is 130
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 3.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 2.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 5.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 3.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 6.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 6.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 6.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 5.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 5.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 6.000000
 > got command: 0x81
-> current position is 114
+> current position is 106
 > got command: 0x07
-> current position is 115
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 116
+> current position is 108
 > got command: 0x02
-> current position is 120
+> current position is 112
 > argument taken is: 3.000000
 > got command: 0x81
-> current position is 121
+> current position is 113
 > got command: 0x07
-> current position is 122
+> current position is 114
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 5.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 3.00 and 5.00
 > got command: 0x82
-> current position is 129
+> current position is 121
 > got command: 0x07
-> current position is 130
+> current position is 122
 > taking an argument:
 > got command: 0x02
-> current position is 131
+> current position is 123
 > got command: 0x03
-> current position is 135
+> current position is 127
 > argument taken is: 5.000000
 > got command: 0x81
-> current position is 136
+> current position is 128
 > got command: 0x07
-> current position is 137
+> current position is 129
 > taking an argument:
 > got command: 0x02
-> current position is 138
+> current position is 130
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 5.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 3.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 8.000000
 > got command: 0x82
+> current position is 149
+> got command: 0x07
+> current position is 150
+> taking an argument:
+> got command: 0x02
+> current position is 151
+> got command: 0x01
+> current position is 155
+> argument taken is: 5.000000
+> got command: 0x81
+> current position is 156
+> got command: 0x07
 > current position is 157
-> got command: 0x07
+> taking an argument:
+> got command: 0x02
 > current position is 158
-> taking an argument:
-> got command: 0x02
-> current position is 159
-> got command: 0x01
+> got command: 0000
+> current position is 162
+> argument taken is: 5.000000
+> got command: 0x81
 > current position is 163
-> argument taken is: 5.000000
-> got command: 0x81
-> current position is 164
-> got command: 0x07
-> current position is 165
-> taking an argument:
-> got command: 0x02
-> current position is 166
-> got command: 0000
-> current position is 170
-> argument taken is: 5.000000
-> got command: 0x81
-> current position is 171
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 5.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 5.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 4.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 4.00 and 0.00
-> got command: 0x81
-> current position is 114
-> got command: 0x07
-> current position is 115
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
 > taking an argument:
-> got command: 0x02
-> current position is 116
-> got command: 0x02
-> current position is 120
+> got command: 0x01
+> current position is 105
 > argument taken is: 5.000000
 > got command: 0x81
-> current position is 121
+> current position is 106
 > got command: 0x07
-> current position is 122
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 108
+> got command: 0x02
+> current position is 112
+> argument taken is: 5.000000
+> got command: 0x81
+> current position is 113
+> got command: 0x07
+> current position is 114
+> taking an argument:
+> got command: 0x02
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 8.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 5.00 and 8.00
 > got command: 0x82
-> current position is 129
+> current position is 121
 > got command: 0x07
-> current position is 130
+> current position is 122
 > taking an argument:
 > got command: 0x02
-> current position is 131
+> current position is 123
 > got command: 0x03
-> current position is 135
+> current position is 127
 > argument taken is: 8.000000
 > got command: 0x81
-> current position is 136
+> current position is 128
 > got command: 0x07
-> current position is 137
+> current position is 129
 > taking an argument:
 > got command: 0x02
-> current position is 138
+> current position is 130
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 8.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 5.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 13.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 8.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 4.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 4.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 4.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 3.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 3.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 4.000000
 > got command: 0x81
-> current position is 114
+> current position is 106
 > got command: 0x07
-> current position is 115
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 116
+> current position is 108
 > got command: 0x02
-> current position is 120
+> current position is 112
 > argument taken is: 8.000000
 > got command: 0x81
-> current position is 121
+> current position is 113
 > got command: 0x07
-> current position is 122
+> current position is 114
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 13.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 8.00 and 13.00
 > got command: 0x82
-> current position is 129
+> current position is 121
 > got command: 0x07
-> current position is 130
+> current position is 122
 > taking an argument:
 > got command: 0x02
-> current position is 131
+> current position is 123
 > got command: 0x03
-> current position is 135
+> current position is 127
 > argument taken is: 13.000000
 > got command: 0x81
-> current position is 136
+> current position is 128
 > got command: 0x07
-> current position is 137
+> current position is 129
 > taking an argument:
 > got command: 0x02
-> current position is 138
+> current position is 130
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 13.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 8.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 21.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 13.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 3.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 3.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 3.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 2.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 2.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 3.000000
 > got command: 0x81
-> current position is 114
+> current position is 106
 > got command: 0x07
-> current position is 115
+> current position is 107
 > taking an argument:
 > got command: 0x02
-> current position is 116
+> current position is 108
 > got command: 0x02
-> current position is 120
+> current position is 112
 > argument taken is: 13.000000
 > got command: 0x81
-> current position is 121
+> current position is 113
 > got command: 0x07
-> current position is 122
+> current position is 114
 > taking an argument:
 > got command: 0x02
-> current position is 123
+> current position is 115
 > got command: 0x01
-> current position is 127
+> current position is 119
 > argument taken is: 21.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 13.00 and 21.00
 > got command: 0x82
-> current position is 129
-> got command: 0x07
-> current position is 130
-> taking an argument:
-> got command: 0x02
-> current position is 131
-> got command: 0x03
-> current position is 135
-> argument taken is: 21.000000
-> got command: 0x81
-> current position is 136
-> got command: 0x07
-> current position is 137
-> taking an argument:
-> got command: 0x02
-> current position is 138
-> got command: 0x01
-> current position is 142
-> argument taken is: 21.000000
-> got command: 0x82
-> current position is 143
-> got command: 0x07
-> current position is 144
-> taking an argument:
-> got command: 0x02
-> current position is 145
-> got command: 0x02
-> current position is 149
-> argument taken is: 13.000000
-> got command: 0x81
-> current position is 150
-> got command: 0x07
-> current position is 151
-> taking an argument:
-> got command: 0x02
-> current position is 152
-> got command: 0x03
-> current position is 156
-> argument taken is: 34.000000
-> got command: 0x82
-> current position is 157
-> got command: 0x07
-> current position is 158
-> taking an argument:
-> got command: 0x02
-> current position is 159
-> got command: 0x01
-> current position is 163
-> argument taken is: 21.000000
-> got command: 0x81
-> current position is 164
-> got command: 0x07
-> current position is 165
-> taking an argument:
-> got command: 0x02
-> current position is 166
-> got command: 0000
-> current position is 170
-> argument taken is: 2.000000
-> got command: 0x81
-> current position is 171
-> got command: 0x01
-> current position is 172
-> taking an argument:
-> got command: 0000
-> current position is 180
-> argument taken is: 1.000000
-> got command: 0x03
-> current position is 181
-> doing arithmetical operation:
-> arithm operation with 2.00 and 1.00
-> got command: 0x82
-> current position is 182
-> got command: 0x07
-> current position is 183
-> taking an argument:
-> got command: 0x02
-> current position is 184
-> got command: 0000
-> current position is 188
-> argument taken is: 2.000000
-> got command: 0x86
-> current position is 189
-> got command: 0x08
-> current position is 190
-> taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
-> got command: 0x81
-> current position is 91
-> got command: 0x07
-> current position is 92
-> taking an argument:
-> got command: 0x02
-> current position is 93
-> got command: 0000
-> current position is 97
-> argument taken is: 1.000000
-> got command: 0x81
-> current position is 98
-> got command: 0x01
-> current position is 99
-> taking an argument:
-> got command: 0000
-> current position is 107
-> argument taken is: 0.000000
-> got command: 0x8b
-> current position is 108
-> got command: 0x08
-> current position is 109
-> taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
-> comparison operation between 1.00 and 0.00
-> got command: 0x81
-> current position is 114
-> got command: 0x07
-> current position is 115
-> taking an argument:
-> got command: 0x02
-> current position is 116
-> got command: 0x02
-> current position is 120
-> argument taken is: 21.000000
-> got command: 0x81
 > current position is 121
 > got command: 0x07
 > current position is 122
 > taking an argument:
 > got command: 0x02
 > current position is 123
-> got command: 0x01
+> got command: 0x03
 > current position is 127
+> argument taken is: 21.000000
+> got command: 0x81
+> current position is 128
+> got command: 0x07
+> current position is 129
+> taking an argument:
+> got command: 0x02
+> current position is 130
+> got command: 0x01
+> current position is 134
+> argument taken is: 21.000000
+> got command: 0x82
+> current position is 135
+> got command: 0x07
+> current position is 136
+> taking an argument:
+> got command: 0x02
+> current position is 137
+> got command: 0x02
+> current position is 141
+> argument taken is: 13.000000
+> got command: 0x81
+> current position is 142
+> got command: 0x07
+> current position is 143
+> taking an argument:
+> got command: 0x02
+> current position is 144
+> got command: 0x03
+> current position is 148
+> argument taken is: 34.000000
+> got command: 0x82
+> current position is 149
+> got command: 0x07
+> current position is 150
+> taking an argument:
+> got command: 0x02
+> current position is 151
+> got command: 0x01
+> current position is 155
+> argument taken is: 21.000000
+> got command: 0x81
+> current position is 156
+> got command: 0x07
+> current position is 157
+> taking an argument:
+> got command: 0x02
+> current position is 158
+> got command: 0000
+> current position is 162
+> argument taken is: 2.000000
+> got command: 0x81
+> current position is 163
+> got command: 0x01
+> current position is 164
+> taking an argument:
+> got command: 0000
+> current position is 172
+> argument taken is: 1.000000
+> got command: 0x03
+> current position is 173
+> doing arithmetical operation:
+> arithm operation with 2.00 and 1.00
+> got command: 0x82
+> current position is 174
+> got command: 0x07
+> current position is 175
+> taking an argument:
+> got command: 0x02
+> current position is 176
+> got command: 0000
+> current position is 180
+> argument taken is: 2.000000
+> got command: 0x86
+> current position is 181
+> got command: 0x08
+> current position is 182
+> taking an argument:
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
+> got command: 0x81
+> current position is 80
+> got command: 0x07
+> current position is 81
+> taking an argument:
+> got command: 0x02
+> current position is 82
+> got command: 0000
+> current position is 86
+> argument taken is: 1.000000
+> got command: 0x81
+> current position is 87
+> got command: 0x01
+> current position is 88
+> taking an argument:
+> got command: 0000
+> current position is 96
+> argument taken is: 0.000000
+> got command: 0x8b
+> current position is 97
+> got command: 0x08
+> current position is 98
+> taking an argument:
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
+> comparison operation between 1.00 and 0.00
+> got command: 0x82
+> current position is 103
+> got command: 0x02
+> current position is 104
+> taking an argument:
+> got command: 0x01
+> current position is 105
+> argument taken is: 2.000000
+> got command: 0x81
+> current position is 106
+> got command: 0x07
+> current position is 107
+> taking an argument:
+> got command: 0x02
+> current position is 108
+> got command: 0x02
+> current position is 112
+> argument taken is: 21.000000
+> got command: 0x81
+> current position is 113
+> got command: 0x07
+> current position is 114
+> taking an argument:
+> got command: 0x02
+> current position is 115
+> got command: 0x01
+> current position is 119
 > argument taken is: 34.000000
 > got command: 0x02
-> current position is 128
+> current position is 120
 > doing arithmetical operation:
 > arithm operation with 21.00 and 34.00
 > got command: 0x82
-> current position is 129
+> current position is 121
 > got command: 0x07
-> current position is 130
+> current position is 122
 > taking an argument:
 > got command: 0x02
-> current position is 131
+> current position is 123
 > got command: 0x03
-> current position is 135
+> current position is 127
 > argument taken is: 34.000000
 > got command: 0x81
-> current position is 136
+> current position is 128
 > got command: 0x07
-> current position is 137
+> current position is 129
 > taking an argument:
 > got command: 0x02
-> current position is 138
+> current position is 130
 > got command: 0x01
-> current position is 142
+> current position is 134
 > argument taken is: 34.000000
 > got command: 0x82
-> current position is 143
+> current position is 135
 > got command: 0x07
-> current position is 144
+> current position is 136
 > taking an argument:
 > got command: 0x02
-> current position is 145
+> current position is 137
 > got command: 0x02
-> current position is 149
+> current position is 141
 > argument taken is: 21.000000
 > got command: 0x81
-> current position is 150
+> current position is 142
 > got command: 0x07
-> current position is 151
+> current position is 143
 > taking an argument:
 > got command: 0x02
-> current position is 152
+> current position is 144
 > got command: 0x03
-> current position is 156
+> current position is 148
 > argument taken is: 55.000000
 > got command: 0x82
-> current position is 157
+> current position is 149
 > got command: 0x07
-> current position is 158
+> current position is 150
 > taking an argument:
 > got command: 0x02
-> current position is 159
+> current position is 151
 > got command: 0x01
-> current position is 163
+> current position is 155
 > argument taken is: 34.000000
 > got command: 0x81
-> current position is 164
+> current position is 156
 > got command: 0x07
-> current position is 165
+> current position is 157
 > taking an argument:
 > got command: 0x02
-> current position is 166
+> current position is 158
 > got command: 0000
-> current position is 170
+> current position is 162
 > argument taken is: 1.000000
 > got command: 0x81
-> current position is 171
+> current position is 163
 > got command: 0x01
-> current position is 172
+> current position is 164
 > taking an argument:
 > got command: 0000
-> current position is 180
+> current position is 172
 > argument taken is: 1.000000
 > got command: 0x03
-> current position is 181
+> current position is 173
 > doing arithmetical operation:
 > arithm operation with 1.00 and 1.00
 > got command: 0x82
-> current position is 182
+> current position is 174
 > got command: 0x07
-> current position is 183
+> current position is 175
 > taking an argument:
 > got command: 0x02
-> current position is 184
+> current position is 176
 > got command: 0000
-> current position is 188
+> current position is 180
 > argument taken is: 1.000000
 > got command: 0x86
-> current position is 189
+> current position is 181
 > got command: 0x08
-> current position is 190
+> current position is 182
 > taking an argument:
-> got command: 0x5a
-> current position is 194
-> argument taken is: 0.000000
+> got command: 0x4f
+> current position is 186
+> argument taken is: -0.000000
 > got command: 0x81
-> current position is 91
+> current position is 80
 > got command: 0x07
-> current position is 92
+> current position is 81
 > taking an argument:
 > got command: 0x02
-> current position is 93
+> current position is 82
 > got command: 0000
-> current position is 97
+> current position is 86
 > argument taken is: 0.000000
 > got command: 0x81
-> current position is 98
+> current position is 87
 > got command: 0x01
-> current position is 99
+> current position is 88
 > taking an argument:
 > got command: 0000
-> current position is 107
+> current position is 96
 > argument taken is: 0.000000
 > got command: 0x8b
-> current position is 108
+> current position is 97
 > got command: 0x08
-> current position is 109
+> current position is 98
 > taking an argument:
-> got command: 0xc2
-> current position is 113
-> argument taken is: 0.000000
+> got command: 0xba
+> current position is 102
+> argument taken is: -0.000000
 > comparison operation between 0.00 and 0.00
-> got command: 0x81
-> current position is 195
-> got command: 0x07
-> current position is 196
-> taking an argument:
-> got command: 0x02
-> current position is 197
-> got command: 0x03
-> current position is 201
-> argument taken is: 55.000000
 > got command: 0x82
-> current position is 202
+> current position is 187
 > got command: 0x02
-> current position is 203
+> current position is 188
 > taking an argument:
+> got command: 0x01
+> current position is 189
+> argument taken is: 1.000000
+> got command: 0x81
+> current position is 190
+> got command: 0x07
+> current position is 191
+> taking an argument:
+> got command: 0x02
+> current position is 192
 > got command: 0x03
-> current position is 204
-> argument taken is: 0.000000
+> current position is 196
+> argument taken is: 55.000000
 > got command: 0x93
-> current position is 205
+> current position is 197
 > got command: 0x71
-> current position is 206
+> current position is 198
 > taking an argument:
 > got command: 0x02
-> current position is 207
+> current position is 199
+> got command: 0000
+> current position is 203
+> argument taken is: 0.000000
+> taking an argument:
 > got command: 0000
 > current position is 211
 > argument taken is: 0.000000
-> taking an argument:
-> got command: 0000
-> current position is 219
-> argument taken is: 0.000000
 > got command: 0x93
-> current position is 220
+> current position is 212
 > got command: 0x71
-> current position is 221
+> current position is 213
 > taking an argument:
 > got command: 0x02
-> current position is 222
+> current position is 214
 > got command: 0x01
-> current position is 226
+> current position is 218
 > argument taken is: 55.000000
 > taking an argument:
 > got command: 0000
-> current position is 234
+> current position is 226
 > argument taken is: 0.000000
 > got command: 0x93
-> current position is 235
+> current position is 227
 > got command: 0x71
-> current position is 236
+> current position is 228
 > taking an argument:
 > got command: 0x02
-> current position is 237
+> current position is 229
 > got command: 0x02
-> current position is 241
+> current position is 233
 > argument taken is: 34.000000
 > taking an argument:
 > got command: 0000
-> current position is 249
+> current position is 241
 > argument taken is: 0.000000
 > got command: 0x93
-> current position is 250
+> current position is 242
 > got command: 0x71
-> current position is 251
+> current position is 243
 > taking an argument:
 > got command: 0x02
-> current position is 252
+> current position is 244
 > got command: 0x03
+> current position is 248
+> argument taken is: 55.000000
+> taking an argument:
+> got command: 0000
 > current position is 256
-> argument taken is: 55.000000
+> argument taken is: 0.000000
+> got command: 0x82
+> current position is 257
+> got command: 0x02
+> current position is 258
 > taking an argument:
 > got command: 0000
-> current position is 264
+> current position is 259
 > argument taken is: 0.000000
-> got command: 0x93
-> current position is 265
-> got command: 0x22
-> current position is 266
+> got command: 0x82
+> current position is 260
+> got command: 0x02
+> current position is 261
 > taking an argument:
 > got command: 0x02
-> current position is 267
+> current position is 262
 > argument taken is: 0.000000
-> taking an argument:
-> got command: 0000
-> current position is 268
-> argument taken is: 0.000000
-> got command: 0x93
-> current position is 269
-> got command: 0x21
-> current position is 270
-> taking an argument:
-> got command: 0000
-> current position is 271
-> argument taken is: 0.000000
-> taking an argument:
-> got command: 0000
-> current position is 279
-> argument taken is: 0.000000
-> got command: 0x09
-> current position is 280
 > got command: 0x81
-> current position is 18
+> current position is 263
 > got command: 0x02
-> current position is 19
+> current position is 264
 > taking an argument:
-> got command: 0x03
-> current position is 20
+> got command: 0000
+> current position is 265
 > argument taken is: 55.000000
+> got command: 0x09
+> current position is 266
 > got command: 0x07
-> current position is 21
+> current position is 10
 > got command: 0x0f
-> current position is 22
+> current position is 11
 > programm halted
 > commands sequence completed, ending programm
 > closing logfile

@@ -1,6 +1,7 @@
 INSTRUCT. NAME           | ARGUMENTS           | ERROR               |
 
 STK_CONSTED              |                     |                     |
+STK_PUSH                 | 0.000000            |                     |
 STK_PUSH                 | 9.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 1.000000            |                     |
@@ -12,6 +13,8 @@ STK_PUSH                 | 0.000000            |                     |
 STK_PUSH                 | 9.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
+>> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 9.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 0.000000            |                     |
 STK_PUSH                 | 1.000000            |                     |
@@ -32,6 +35,8 @@ STK_PUSH                 | 8.000000            |                     |
 STK_PUSH                 | 8.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
+>> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 8.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 1.000000            |                     |
 STK_PUSH                 | 1.000000            |                     |
@@ -53,6 +58,8 @@ STK_PUSH                 | 7.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 7.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 1.000000            |                     |
 STK_PUSH                 | 2.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
@@ -73,6 +80,8 @@ STK_PUSH                 | 6.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 6.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 2.000000            |                     |
 STK_PUSH                 | 3.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
@@ -93,6 +102,8 @@ STK_PUSH                 | 5.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 5.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 3.000000            |                     |
 STK_PUSH                 | 5.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
@@ -113,6 +124,8 @@ STK_PUSH                 | 4.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 4.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 5.000000            |                     |
 STK_PUSH                 | 8.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
@@ -132,6 +145,8 @@ STK_PUSH                 | 3.000000            |                     |
 STK_PUSH                 | 3.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
+>> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 3.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 8.000000            |                     |
 STK_PUSH                 | 13.000000           |                     |
@@ -153,6 +168,8 @@ STK_PUSH                 | 2.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 2.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 13.000000           |                     |
 STK_PUSH                 | 21.000000           |                     |
 >> Number was popped     | STK_POP             |                     |
@@ -173,6 +190,8 @@ STK_PUSH                 | 1.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 1.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 21.000000           |                     |
 STK_PUSH                 | 34.000000           |                     |
 >> Number was popped     | STK_POP             |                     |
@@ -193,7 +212,10 @@ STK_PUSH                 | 0.000000            |                     |
 STK_PUSH                 | 0.000000            |                     |
 >> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
+STK_PUSH                 | 0.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 55.000000           |                     |
+>> Number was popped     | STK_POP             |                     |
 >> Number was popped     | STK_POP             |                     |
 STK_PUSH                 | 55.000000           |                     |
 >> Number was popped     | STK_POP             |                     |
