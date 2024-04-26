@@ -1,0 +1,6 @@
+INSTRUCT. NAME           | ARGUMENTS           | ERROR               |
+
+STK_CONSTED              |                     |                     |
+STK_PUSH                 | 0.000000            |                     |
+>> Number was popped     | STK_POP             |                     |
+STK_DESTTED              |                     |                     |
