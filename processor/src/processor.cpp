@@ -93,8 +93,11 @@ int caseJMP(Stack <data_t> *stackName, bytecode_t *bytecode, const int cmd, cons
     }
 
     LOG("> comparison operation between %.2lf and %.2lf\n", temp1, temp2);
-    /*if (stackName->stackPush(temp1))
-        {ERRLOGRET(RPUSH_CMD_FAIL, msgZeroArgs, "RPUSH_CMD_FAIL", "", bytecode->ip, "[error]");}*/
+    if (stackName->stackPush(temp1))
+    {
+        LOG("[error]>>> push command fail\n");
+        return RPUSH_CMD_FAIL;
+    }
 
     switch(cmd)
     {
