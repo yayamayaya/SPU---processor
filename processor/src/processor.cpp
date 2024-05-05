@@ -64,10 +64,26 @@ int arithmetics(Stack <data_t> *stackName, const int cmd)
     int error = 0;
     switch (cmd)
     {
-    case ADD:   CALC(+);
-    case SUB:   CALC(-);
-    case MULT:  CALC(*);
-    case DIV:   CALC(/);
+    case ADD:       CALC(+);
+    case SUB:       CALC(-);
+    case MULT:      CALC(*);
+    case DIV:       CALC(/);
+    case LOG_E:     CALC(==);
+    case LOG_NE:    CALC(!=);
+    case LOG_A:     CALC(>);
+    case LOG_AE:    CALC(>=);
+    case LOG_B:     CALC(<);
+    case LOG_BE:    CALC(<=);
+
+    case POW:     
+        if (stackName->stackPush(pow(temp1, temp2)))                
+        {                                                                               
+            printf("[error]>>> stk push fail\n");                                       
+            LOG("[error]>>> error while pushing a data in stack in arithm op\n");       
+            stackName->stackPrint(IN_CONSOLE);                                          
+            error = ARITHM_CMD_FAIL;                                                    
+        }                                                                               
+        break;
 
     default:
         LOG("[error]>>> fatal error in arithm operation\n");
@@ -195,6 +211,13 @@ int doCommand(processor_t *processor, bytecode_t *bytecode)
     case SUB:
     case MULT:
     case DIV:
+    case LOG_E:
+    case LOG_NE:
+    case LOG_A:
+    case LOG_AE:
+    case LOG_B:
+    case LOG_BE:
+    case POW:
         error = arithmetics(&processor->stk, cmd);
         break;
 
@@ -242,13 +265,22 @@ int doCommand(processor_t *processor, bytecode_t *bytecode)
         *argHolder1 = *argHolder2;
         break;
 
+    case OUTI:
+    {
+        data_t popData = 0;
+        printf("--> ");
+        processor->stk.stackPop(&popData);
+        data_print(stdout, popData);
+        break; 
+    }
+
     case OUT:
     {
         data_t popData = 0;
 
         printf("\n>>> DATA DUMPING:\n");
         while (processor->stk.stackPop(&popData) != STK_EMPTY)
-            data_print(stderr, popData);
+            data_print(stdout, popData);
         printf(">>> DUMP ENDED.\n");
         break; 
     }

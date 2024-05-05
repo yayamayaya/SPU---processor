@@ -1,6 +1,6 @@
 #pragma once
 
-#define COMMANDS_NUM 20
+#define COMMANDS_NUM 28
 #define REGISTERS_NUM 4
 
 #define REGISTER_POSITION_AS_ARGUMENT 2
@@ -25,7 +25,14 @@ enum ASM
     SUB             = 0x03,     //Вычитание
     MULT            = 0x04,     //Умножение
     DIV             = 0x05,     //Деление
-    SQRT            = 0x0A,     //Квадратный корень
+    LOG_E           = 0x11,
+    LOG_NE          = 0x12,
+    LOG_A           = 0x13,
+    LOG_AE          = 0x14,
+    LOG_B           = 0x15,
+    LOG_BE          = 0x16,    
+    SQRT            = 0x17,     //Квадратный корень
+    POW             = 0x18,     //степень
 
     POP_GRP         = 0x82,
     
@@ -34,6 +41,7 @@ enum ASM
     MOV_GRP         = 0x93,     //Команда mov
 
     OUT             = 0x07,     //Вывод
+    OUTI            = 0x19,     //Одиночный вывод
 
     HALT            = 0x0F,     //Завершение 
 
@@ -110,6 +118,14 @@ cmd commands[COMMANDS_NUM] = {
 {"call", CALL},
 {"mov", MOV_GRP},
 {"sqrt", SQRT},
+{"pow", POW},
+{"log_e", LOG_E},
+{"log_ne", LOG_NE},
+{"log_a", LOG_A},
+{"log_ae", LOG_AE},
+{"log_b", LOG_B},
+{"log_be", LOG_BE},
+{"out_i", OUTI}
 //{"graph", GRAPHICS}
 };
 
