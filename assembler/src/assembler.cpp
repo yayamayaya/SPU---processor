@@ -414,7 +414,15 @@ int Compiler(const tokens_t *tokens, bytecode_t *bytecode, labelTable_t *labels)
         case IN:
         case OUT:
         case HALT:
+        case LOG_A:
+        case LOG_AE:
+        case LOG_E:
+        case LOG_NE:
+        case LOG_B:
+        case LOG_BE:
+        case POW:
         case RET:
+        case OUTI:
             cmdInArr(cmdNum, bytecode);
             break;
         
