@@ -1,23 +1,15 @@
-#pragma once
+#ifndef ASM_H
+#define ASM_H
 
-#define COMMANDS_NUM 28
-#define REGISTERS_NUM 4
-
-#define REGISTER_POSITION_AS_ARGUMENT 2
+//#define REGISTER_POSITION_AS_ARGUMENT 2
 
 typedef unsigned char byte_t;
 
 typedef double data_t;
-#define DATA_SPEC "%lf%n"
+#define DATA_NSPEC "%lf%n"
+#define DATA_SPEC  "%lf"
 
-enum ARGUMENT_TYPE
-{
-    ARG_NUMBER = 1,
-    ARG_RAM = 2,
-    ARG_REGISTER = 3
-};
-
-enum ASM
+enum MACHINE_CODE
 {
     PUSH_GRP        = 0x81,    
 
@@ -70,13 +62,13 @@ enum ASM
     REGNUM_ARG      = 0b0011,
 };
 
-enum numberTypes
+/*enum numberTypes
 {
     ADDRESS = 1,
     DATA = 2
-};
+};*/
 
-enum asmDebug
+/*enum ASM_DEBUG
 {
     FILEREAD_ERR = 501,
     FILENULL_ERR,
@@ -89,45 +81,7 @@ enum asmDebug
     ASM_MEM_ALC_ERR = 101,
     COMP_ERR = 404,
     NOLABEL = 0xF0
-};
-
-typedef struct
-{
-    const char *commandName;
-    enum ASM commandNum;
-} cmd;
-
-cmd commands[COMMANDS_NUM] = {
-{"push", PUSH_GRP},
-{"add", ADD},
-{"sub", SUB},
-{"mult", MULT},
-{"div", DIV},
-{"ret", RET},
-{"out", OUT},
-{"halt", HALT},
-{"in", IN},
-{"pop", POP_GRP},
-{"jmp", JMP},
-{"jb", JB},
-{"jbe", JBE},
-{"ja", JA},
-{"jae", JAE},
-{"je", JE},
-{"jne", JNE},
-{"call", CALL},
-{"mov", MOV_GRP},
-{"sqrt", SQRT},
-{"pow", POW},
-{"log_e", LOG_E},
-{"log_ne", LOG_NE},
-{"log_a", LOG_A},
-{"log_ae", LOG_AE},
-{"log_b", LOG_B},
-{"log_be", LOG_BE},
-{"out_i", OUTI}
-//{"graph", GRAPHICS}
-};
+};*/
 
 /*cmd registers[REGISTERS_NUM] = {
 {"ax", AX},
@@ -148,3 +102,5 @@ push 5 0000 0001
 
 mov [rax + 5],[bax + 1] 0101 1111 0101 0111
 */
+
+#endif
