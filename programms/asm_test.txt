@@ -1,0 +1,8 @@
+push 10
+
+label:
+
+push cx
+ret
+
+call label
