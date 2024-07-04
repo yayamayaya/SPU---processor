@@ -85,7 +85,7 @@ int Compiler(token_arr *tokens, bytecode_t *bytecode, Stack <label_t> *labels)
         case JNE:
         {
             LOG("> jmp command %#04X found\n", cmd);
-            uint16_t jmp_cmd = cmd | (ADR_ARG << 8);
+            uint16_t jmp_cmd = cmd | (ADR_ARG << 12);
             num_in_arr(bytecode, &jmp_cmd, sizeof(uint16_t));
             token_n++;
             if (tokens->tokens[token_n].type != STRING)
