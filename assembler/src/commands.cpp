@@ -29,7 +29,6 @@ cmd commands[COMMANDS_NUM] = {
 {"log_ae", LOG_AE, 6},
 {"log_b", LOG_B, 5},
 {"log_be", LOG_BE, 6}
-//{"graph", GRAPHICS}
 };
 
 syntax_ch syntax_chars[SYNTAX_CH_NUMBER] =
