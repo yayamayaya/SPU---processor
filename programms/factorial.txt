@@ -7,7 +7,7 @@ halt
 metka:
     pop ax
     push ax
-    push 1 push ax
+    push ax push 1
     sub
     push 1
     je rec

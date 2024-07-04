@@ -1,14 +1,12 @@
 #ifndef ASM_H
 #define ASM_H
 
-//#define REGISTER_POSITION_AS_ARGUMENT 2
-
 typedef unsigned char byte_t;
 
-typedef long long int data_t;
-#define DATA_NSPEC      "%lld%n"
-#define DATA_SPEC       "%lld"
-#define DATA_PRINT_SPEC "%.2lld\n"
+typedef double data_t;
+#define DATA_NSPEC      "%lf%n"
+#define DATA_SPEC       "%lf"
+#define DATA_PRINT_SPEC "%.02lf\n"
 
 enum MACHINE_CODE
 {

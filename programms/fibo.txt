@@ -17,13 +17,13 @@ fibo:
     push bx
     add             
     mov bx, ax
-    call inc
+    call up
     push cx push dx
     je end
     pop cx
     jmp fibo
 
-inc:
+up:
     push cx
     push 1
     add

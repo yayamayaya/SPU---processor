@@ -103,7 +103,8 @@ int argument_parsing(bytecode_t *bytecode, int *token_number, token_arr *tokens)
             if (tokens->tokens[*token_number].type == NUMBER)
             {
                 LOG("> number to add was found\n");
-                num_in_arr(bytecode, &tokens->tokens[*token_number].data.number, sizeof(data_t));
+                int number = (int)tokens->tokens[*token_number].data.number;
+                num_in_arr(bytecode, &number, sizeof(int));
                 
                 return REGNUM_ARG;
             }
