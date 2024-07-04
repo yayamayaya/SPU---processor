@@ -16,7 +16,6 @@ enum ASM_COMP_ERRS
     WRONG_LINE  = 1512,
     JMP_NOT_STRING,
     LABEL_NOT_FOUND,
-    FATAL_ERR = 404,
 };
 
 int Compiler(token_arr *tokens, bytecode_t *bytecode, Stack <label_t> *labels);
