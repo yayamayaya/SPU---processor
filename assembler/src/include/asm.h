@@ -5,9 +5,10 @@
 
 typedef unsigned char byte_t;
 
-typedef double data_t;
-#define DATA_NSPEC "%lf%n"
-#define DATA_SPEC  "%lf"
+typedef long long int data_t;
+#define DATA_NSPEC      "%lld%n"
+#define DATA_SPEC       "%lld"
+#define DATA_PRINT_SPEC "%.2lld\n"
 
 enum MACHINE_CODE
 {
@@ -62,33 +63,10 @@ enum MACHINE_CODE
     REGNUM_ARG      = 0b0011,
 };
 
-/*enum numberTypes
+enum GENERAL_ERRS
 {
-    ADDRESS = 1,
-    DATA = 2
-};*/
-
-/*enum ASM_DEBUG
-{
-    FILEREAD_ERR = 501,
-    FILENULL_ERR,
-    INST_DET_ERR,
-    SIZEOFNUM_ERR,
-    ARG_DET_ERR,
-    FILEWRITE_ERR,
-    FILEOPEN_ERR,
-    FATAL_ERR,
-    ASM_MEM_ALC_ERR = 101,
-    COMP_ERR = 404,
-    NOLABEL = 0xF0
-};*/
-
-/*cmd registers[REGISTERS_NUM] = {
-{"ax", AX},
-{"bx", BX},
-{"cx", CX},
-{"dx", DX}
-};*/
+    FATAL_ERR = 404,
+};
 
 /*
 Обработка аргументов:
