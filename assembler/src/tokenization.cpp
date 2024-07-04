@@ -150,7 +150,7 @@ int take_token(token_t *token_ptr, int *pos, char *buff)
     }
 
     char string[50] = {0};
-    sscanf(buff + *pos, "%[A-Za-z:_]%n", string, &n);
+    sscanf(buff + *pos, "%[A-Za-z:_0-9]%n", string, &n);
     if (n)
     {
         LOG("> a word \"%s\" was found\n", string);
