@@ -5,6 +5,8 @@
 
 int main(int argc, char const *argv[])
 {
+    _CLEAR_LOGS();
+    
     if (argc != 3)
     {
         printf("[error]>>> not enough arguments for programm call, enter the input and ouptut files\n");
