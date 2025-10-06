@@ -13,7 +13,7 @@ typedef struct
     const char *cmd_name;
     enum MACHINE_CODE cmd_num;
     unsigned char cmd_len;
-} cmd;
+} cmd_t;
 
 enum SYNTAX_CH
 {
@@ -31,7 +31,7 @@ typedef struct
     enum SYNTAX_CH char_code;
 } syntax_ch;
 
-extern cmd commands[COMMANDS_NUM];
+extern cmd_t commands[COMMANDS_NUM];
 extern syntax_ch syntax_chars[SYNTAX_CH_NUMBER];
 
 #endif

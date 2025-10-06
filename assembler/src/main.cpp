@@ -1,52 +1,52 @@
+#include "log.h"
 #include "tokenization.h"
 #include "compiler.h"
-#include "asm.h"
 #include "asm_arrays.h"
+#include "options_parsing.h"
 
-int main(int argc, char const *argv[])
+int main(int argc, char *const argv[])
 {
-    _CLEAR_LOGS();
-    
-    if (argc != 3)
-    {
-        printf("[error]>>> not enough arguments for programm call, enter the input and ouptut files\n");
-        return 101;
+    _OPEN_LOG("compiler.log");
+
+    int ret_val = parse_options(argc, argv);
+    if (ret_val) {
+        printf("Please check your options, type '-h' for help\n");
+
+        _CLOSE_LOG();
+        return ret_val;
     }
 
-    int err_code = 0;
-    asm_arrays arrays = {0};
-    
-    int error = tokenize(&arrays.tokens, argv[2]);
+    AsmArrays arrays = {};
+    int error = allocate_arrays_memory(&arrays);
     if (error)
-        return error;
+        goto end;
 
-    err_code = allocate_arrays_memory(&arrays);
-    if (err_code)
-        return err_code;
-    
+    error = tokenize(&arrays.tokens);
+    if (error)
+        goto end;
 
-    err_code = Compiler(&arrays.tokens, &arrays.bytecode, &arrays.labels);
-    if (err_code)
-    {
-        free_arrays_memory(&arrays);
-        return err_code;
-    }
+    error = Compiler(&arrays);
+    if (error)
+        goto end;
 
     if (arrays.labels.get_stack_size())
     {
         arrays.bytecode.ip = 0;
-        err_code = Compiler(&arrays.tokens, &arrays.bytecode, &arrays.labels);
-        if (err_code)
-        {
-            free_arrays_memory(&arrays);
-            return err_code;
-        }
+        error = Compiler(&arrays);
+        if (error)
+            goto end;
     }
 
-    arrays.labels.print(IN_FILE);
-    
-    err_code = bytecode_to_file(argv[1], &arrays.bytecode);
-    
+    if (label_dump_enabled())
+        label_table_print(&arrays.labels);
+
+    if (!skip_codegen())
+        error = bytecode_to_file(output_file_name(), &arrays.bytecode);
+
+end:
     free_arrays_memory(&arrays);
-    return err_code;
+    free_files();
+    _CLOSE_LOG();
+    
+    return error;
 }

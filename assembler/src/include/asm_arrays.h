@@ -1,22 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "tokenization.h"
 #include "labels.h"
 #include "bytecode_gen.h"
-#include "log.h"
+#include "stack.h"
 
 #ifndef ASM_ARRAYS
 #define ASM_ARRAYS
 
 typedef struct
 {
-    bytecode_t bytecode;
+    bytecode_t      bytecode;
     Stack <label_t> labels;
-    token_arr tokens;
-} asm_arrays;
+    Stack <token_t> tokens;
+} AsmArrays;
 
-int allocate_arrays_memory(asm_arrays *arrays);
+int allocate_arrays_memory(AsmArrays *arrays);
 
-void free_arrays_memory(asm_arrays *arrays);
+void free_arrays_memory(AsmArrays *arrays);
 
 #endif

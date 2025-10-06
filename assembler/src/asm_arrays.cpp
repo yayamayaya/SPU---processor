@@ -1,27 +1,24 @@
 #include "asm_arrays.h"
+#include "bytecode_funcs.h"
 
-int allocate_arrays_memory(asm_arrays *arrays)
+int allocate_arrays_memory(AsmArrays *arrays)
 {
-    arrays->bytecode = {NULL, INITIAL_BYTECODE_SIZE, 0};
-    arrays->bytecode.bytecode_holder = (uint8_t *)calloc(arrays->bytecode.bytecode_holder_size, sizeof(uint8_t));
-    if (!arrays->bytecode.bytecode_holder)
-    {
-        printf("[error]>>> Couldn't allocate memory for bytecode\n");
-        free(arrays->tokens.tokens);
-        return BYTECODE_MEM_ALC_ERR;
-    }
+    assert(arrays);
 
-    open_gen_log();
+    int error = ctor(&arrays->bytecode, 50);
+    if (error)
+        return error;
 
-    int error = arrays->labels.Ctor(10, "logs/label_stack.log");
+    error = arrays->tokens.Ctor(30, "logs/tokens_stack.log");
+    if (error)
+        return error;
+
+    error = arrays->labels.Ctor(10, "logs/label_stack.log");
     return error;
 }
 
-void free_arrays_memory(asm_arrays *arrays)
-{
-    free(arrays->tokens.tokens);
-    free(arrays->bytecode.bytecode_holder);
+void free_arrays_memory(AsmArrays *arrays) {
+    dtor(&arrays->bytecode);
+    arrays->tokens.Dtor();
     arrays->labels.Dtor();
-
-    close_gen_log();
 }

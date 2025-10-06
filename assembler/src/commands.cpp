@@ -1,6 +1,6 @@
 #include "commands.h"
 
-cmd commands[COMMANDS_NUM] = {
+cmd_t commands[COMMANDS_NUM] = {
 {"push", PUSH_GRP, 4},
 {"add", ADD, 3},
 {"sub", SUB, 3},

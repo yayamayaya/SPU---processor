@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdint.h>
-#include <assert.h>
-#include "string.h"
 #include "stack.h"
-#include "log.h"
 
 #ifndef ASM_LABELS
 #define ASM_LABELS
@@ -14,17 +9,12 @@ typedef struct
     int ip;
 } label_t;
 
-typedef struct
-{
-    label_t *label_arr;   
-    int label_table_size;     
-    int label_counter;
-} label_table;
-
 enum LABEL_WORK
 {
     LABEL_EXIST     = 134,
     LABEL_INSERT    = 135,
+    SAME_LABEL  = 1231,
+    NOT_LABEL   = 1413,
 };
 
 int labeldet(Stack <label_t> *labels, const char *label_name);
