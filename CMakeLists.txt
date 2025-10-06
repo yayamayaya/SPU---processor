@@ -1,16 +1,26 @@
 cmake_minimum_required(VERSION 3.15)
 
-include_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/assembler/src/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/common/file_reading/src
-    ${CMAKE_CURRENT_SOURCE_DIR}/common/logging
-    ${CMAKE_CURRENT_SOURCE_DIR}/stack/src
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+add_definitions(
+    -D _DEBUG -ggdb3 -std=c++17 -g -O0 -Wall -Wextra -Weffc++ -Waggressive-loop-optimizations -Wc++14-compat
+-Wmissing-declarations -Wcast-align -Wcast-qual -Wchar-subscripts -Wconditionally-supported -Wconversion -Wctor-dtor-privacy
+-Wempty-body -Wfloat-equal -Wformat-nonliteral -Wformat-security -Wformat-signedness -Wformat=2 -Winline -Wlogical-op
+-Wnon-virtual-dtor -Wopenmp-simd -Woverloaded-virtual -Wpacked -Wpointer-arith -Winit-self -Wredundant-decls -Wshadow
+-Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=2 -Wsuggest-attribute=noreturn
+-Wsuggest-final-methods -Wsuggest-final-types -Wsuggest-override -Wswitch-default -Wswitch-enum -Wsync-nand -Wundef
+-Wunreachable-code -Wunused -Wuseless-cast -Wvariadic-macros -Wno-literal-suffix -Wno-missing-field-initializers
+-Wno-narrowing -Wno-old-style-cast -Wno-varargs -Wstack-protector -fcheck-new -fsized-deallocation -fstack-protector
+-fstrict-overflow -fno-omit-frame-pointer -Wlarger-than=8192 -Wstack-usage=8192 -pie -fPIE -Werror=vla
 )
 
-add_definitions(-Wall -g)
-add_definitions(-DDEBUG -DSECURE)
+add_compile_options(-fsanitize=address,alignment,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr)
+add_link_options(-fsanitize=address,alignment,bool,bounds,enum,float-cast-overflow,float-divide-by-zero,integer-divide-by-zero,leak,nonnull-attribute,null,object-size,return,returns-nonnull-attribute,shift,signed-integer-overflow,undefined,unreachable,vla-bound,vptr)
 
-add_subdirectory(assembler)
-add_subdirectory(processor)
-add_subdirectory(common/file_reading ${CMAKE_CURRENT_BINARY_DIR}/file_reading)
+add_definitions(-DDEBUG)
+
+add_subdirectory(file_reading ${CMAKE_CURRENT_BINARY_DIR}/file_reading)
 add_subdirectory(stack ${CMAKE_CURRENT_BINARY_DIR}/stack)
+add_subdirectory(logging ${CMAKE_CURRENT_BINARY_DIR}/logging)
+add_subdirectory(assembler)
+# add_subdirectory(processor)
