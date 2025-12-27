@@ -1,0 +1,4 @@
+SPU -> RAM + Bytecode + CORE_POOL[num]
+CORE -> Decoder + ALU + registers
+
+new ASM commands -> switch to core #

@@ -1,6 +1,6 @@
 #include "tokenization.h"
 #include "labels.h"
-#include "bytecode_gen.h"
+#include "bytecode_funcs.h"
 #include "stack.h"
 
 #ifndef ASM_ARRAYS

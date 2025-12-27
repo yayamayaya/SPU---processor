@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-add_library(file_reading file_reading.cpp)
+add_library(file_reading file_reading.cpp file_reading.h)
 
 target_include_directories(
     file_reading

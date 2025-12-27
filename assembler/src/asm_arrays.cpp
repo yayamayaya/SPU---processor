@@ -5,20 +5,12 @@ int allocate_arrays_memory(AsmArrays *arrays)
 {
     assert(arrays);
 
-    int error = ctor(&arrays->bytecode, 50);
-    if (error)
-        return error;
+    arrays->tokens.enable_stack_log("tokens_stack.log");
+    arrays->labels.enable_stack_log("label_stack.log");
 
-    error = arrays->tokens.Ctor(30, "logs/tokens_stack.log");
-    if (error)
-        return error;
-
-    error = arrays->labels.Ctor(10, "logs/label_stack.log");
-    return error;
+    return ctor(&arrays->bytecode, 50);
 }
 
 void free_arrays_memory(AsmArrays *arrays) {
     dtor(&arrays->bytecode);
-    arrays->tokens.Dtor();
-    arrays->labels.Dtor();
 }

@@ -5,9 +5,8 @@
 
 enum ASM_COMP_ERRS
 {
-    WRONG_LINE  = 1512,
-    JMP_NOT_STRING,
-    LABEL_NOT_FOUND,
+    WRONG_LINE      = 0x300,
+    COMMAND_NOT_DET = 0x303,
 };
 
 int Compiler(AsmArrays *arrays);

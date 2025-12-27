@@ -16,6 +16,12 @@ static const size_t log_msg_size = 250;
 static const char err_type[] = "ERROR";
 static const char info_type[] = "INFO";
 
+enum MessageType
+{
+  MSG = 0,
+  ERR = 1
+};
+
 int log_init(const char *log_name) {
   DIR *log_dir = opendir(log_dir_name);
   if (!log_dir && (mkdir(log_dir_name, 0777) == -1)) {

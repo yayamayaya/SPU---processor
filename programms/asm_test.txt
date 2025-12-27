@@ -1,6 +1,15 @@
-push 10
+in
+
+push [ax]
+
+
+in
+
+; hui
 
 label:
+
+load ./programms/graphical/example_pic.txt
 
 push cx
 ret

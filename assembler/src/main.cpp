@@ -16,7 +16,7 @@ int main(int argc, char *const argv[])
         return ret_val;
     }
 
-    AsmArrays arrays = {};
+    AsmArrays arrays = {{0}, {32}, {8}};
     int error = allocate_arrays_memory(&arrays);
     if (error)
         goto end;
@@ -29,7 +29,7 @@ int main(int argc, char *const argv[])
     if (error)
         goto end;
 
-    if (arrays.labels.get_stack_size())
+    if (arrays.labels.stack_size())
     {
         arrays.bytecode.ip = 0;
         error = Compiler(&arrays);

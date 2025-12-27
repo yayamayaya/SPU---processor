@@ -24,32 +24,19 @@ typedef struct
 
 enum TOKEN_TYPES
 {
-    CMD         = 1,
-    SYNTAX      = 2,
-    REGISTER    = 3,
-    NUMBER      = 4,
-    STRING      = 5,
+    CMD         = 0x01,
+    SYNTAX      = 0x02,
+    REGISTER    = 0x04,
+    NUMBER      = 0x08,
+    STRING      = 0x10,
 };
 
 enum TOKEN_ERRORS
 {
-    REG_NOT_EXIST       = 551,
-    TOKEN_MEM_ALC_ERR   = 552,
-    TOKEN_MEM_RLC_ERR   = 553,
-    FILEREAD_ERR        = 554,
+    TOKENIZATION_OK     = 0x100,
+    TOKENIZATION_BAD    = 0x101,
+    FILEREAD_ERR        = 0x102,
 };
-
-#define _POS_SHIFT(arg)                                                                             \
-    pos += arg;                                                                                     \
-    LOG("position shifted, current position is %d, current char is '%c'", pos, buff[pos])
-
-#define _SKIP_SPACES()                                                                              \
-    LOG("skipping spaces");                                                                         \
-    while (isspace(buff[pos]))                                                                      \
-        (pos)++;                                                                                    \
-                                                                                                    \
-    LOG("spaces skipped, current position is: %d, current char is: '%c'", pos, buff[pos])
-
 
 int tokenize(Stack<token_t> *tokens);
 

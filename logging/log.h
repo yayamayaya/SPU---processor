@@ -1,9 +1,6 @@
 #ifndef LOG_FUNC
 #define LOG_FUNC
 
-#define MSG 0
-#define ERR 1
-
 enum LOG_ERRORS {
   FILE_OPEN_ERR = 11,
 };
@@ -12,13 +9,18 @@ enum LOG_ERRORS {
 
 #define LOG(...)                                                               \
   do {                                                                         \
-    log_msg(MSG, L##__VA_ARGS__);                                              \
+    log_msg(0, L##__VA_ARGS__);                                                \
   } while (0)
 
 #define LOG_ERR(...)                                                           \
   do {                                                                         \
-    log_msg(ERR, L##__VA_ARGS__);                                              \
+    log_msg(1, L##__VA_ARGS__);                                                \
   } while (0)
+
+#define LOG_CRITICAL()                                                                     \
+  do {                                                                                     \
+    LOG_ERR("critical error occured in %s:%s() at line %s", __FILE__, __func__, __LINE__)  \
+  }   
 
 #define _OPEN_LOG(arg)                                                         \
   do {                                                                         \
@@ -35,6 +37,8 @@ enum LOG_ERRORS {
 #define LOG(...) while (0)
 
 #define LOG_ERR(...) while (0)
+
+#define LOG_CRITICAL() while (0)
 
 #define _OPEN_LOG(arg) while (0)
 

@@ -7,7 +7,6 @@ cmd_t commands[COMMANDS_NUM] = {
 {"mult", MULT, 4},
 {"div", DIV, 3},
 {"ret", RET, 3},
-{"out_i", OUTI, 5},
 {"out", OUT, 3},
 {"halt", HALT, 4},
 {"in", IN, 2},
@@ -28,7 +27,10 @@ cmd_t commands[COMMANDS_NUM] = {
 {"log_a", LOG_A, 5},
 {"log_ae", LOG_AE, 6},
 {"log_b", LOG_B, 5},
-{"log_be", LOG_BE, 6}
+{"log_be", LOG_BE, 6},
+{"load", LOAD, 4},
+{"display", DISPLAY, 7},
+{"wait", WAIT, 4},
 };
 
 syntax_ch syntax_chars[SYNTAX_CH_NUMBER] =

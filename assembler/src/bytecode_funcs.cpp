@@ -1,6 +1,8 @@
 #include <string.h>
+#include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-#include "bytecode_gen.h"
 #include "bytecode_funcs.h"
 #include "log.h"
 
@@ -61,7 +63,7 @@ size_t bytecode_reserve_space(bytecode_t *bytecode, const size_t data_size)
     assert(bytecode);
 
     if ((bytecode->ip + data_size >= bytecode->capacity) 
-        && bytecode_realloc(bytecode, bytecode->capacity * 2))
+        && bytecode_realloc(bytecode, bytecode->capacity * 2 + data_size))
     {
         LOG_ERR("bytecode array extension error");
         return (size_t)-1;
@@ -102,4 +104,29 @@ int bytecode_realloc(bytecode_t *bytecode, const size_t new_capacity)
     bytecode->capacity = new_capacity;
 
     return 0;
+}
+
+int bytecode_to_file(const char *file_name, bytecode_t *bytecode)
+{
+    assert(file_name);
+    assert(bytecode);
+
+    int err_code = 0;
+
+    LOG("writing bytecode to file");
+    FILE *bc_file = fopen(file_name, "wb");
+    if (!bc_file)
+    {
+        LOG_ERR("couldn't open bytecode file");
+        return BC_FILE_OPEN_ERR;
+    }
+
+    if (fwrite(bytecode->bytecode_holder, sizeof(char), bytecode->ip, bc_file) != bytecode->ip)
+    {
+        LOG_ERR("bytecode file write error");
+        err_code = FILEWRITE_ERR;
+    }
+
+    fclose(bc_file);
+    return err_code;
 }

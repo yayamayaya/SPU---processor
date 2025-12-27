@@ -6,12 +6,21 @@
 #include "asm.h"
 #include "labels.h"
 #include "tokenization.h"
-#include "bytecode_gen.h"
+#include "argument_parsing.h"
 #include "bytecode_funcs.h"
+#include "graphics.h"
 #include "compiler.h"
 #include "log.h"
 
-int determine_label(Stack <label_t> *labels, token_t *token, const int ip);
+bool is_command(const token_t *token);
+
+#define COMMAND_CASE(cmd_type, function)                \
+    case cmd_type:                                      \
+    {                                                   \
+        _SECURE(function);                              \
+                                                        \
+        break;                                          \
+    }
 
 int Compiler(AsmArrays *arrays)
 {
@@ -25,112 +34,44 @@ int Compiler(AsmArrays *arrays)
     bytecode_t     *bytecode = &arrays->bytecode;
 
     LOG("starting compilation");
-    for (int token_n = 0; token_n < tokens->get_stack_size(); token_n++)
+    for (size_t token_n = 0; token_n < tokens->stack_size(); token_n++)
     {
         LOG("token number: %d", token_n);
+        token_t *token = tokens->at(token_n);
 
-        token_t *token = tokens->get_data_ptr() + token_n;
-
-        if (token->type == STRING)
+        if ((token->type & STRING))
         {
             int ret_code = determine_label(labels, token, (int)bytecode->ip);
-
-            if      (ret_code == LABEL_INSERT || ret_code == LABEL_EXIST)
-                continue;
-            else if (ret_code == NOT_LABEL    || ret_code == SAME_LABEL )
+            if (ret_code != LABEL_OK)
                 return ret_code;
+
+            continue;
         }
 
-        if (token->type != CMD)
-        {
-            LOG_ERR("token is not a string nor a command");
-            printf("Compilation error at line %lu: line doesn't contain neither string nor command\n", token->line);
-
+        if (!is_command(token))
             return WRONG_LINE;
-        }
 
-        LOG("label detection finished, determining a command...");
-        unsigned char cmd = token->data.code;
+        byte_t cmd = token->data.code;
 
-        switch (cmd)
+        switch (cmd & ARG_TYPE_MASK)
         {
-        case PUSH_GRP:
-        case POP_GRP:
-        case MOV_GRP:
-        {
-            LOG("argument command %#04X found", cmd);
-            _SECURE(arg_cmd(bytecode, &token_n, tokens));
 
-            break;
-        }
+        COMMAND_CASE( NO_ARGUMENT_CMD, push(bytecode, &cmd, sizeof(byte_t))                 );
 
-        case CALL:
-        case JMP:
-        case JB:
-        case JBE:
-        case JA:
-        case JAE:
-        case JE:
-        case JNE:
-        {
-            LOG("jmp command %#04X found", cmd);
+        COMMAND_CASE( ARGUMENT_CMD,    write_command_with_argument(arrays, &token_n)        );
 
-            uint16_t jmp_cmd = cmd | (ADR_ARG << 12);
-            _SECURE(push(bytecode, &jmp_cmd, sizeof(uint16_t)));
-            
-            token_n++;
-            token_t label_token = tokens->get_data_on_pos(token_n);
-            if (label_token.type != STRING)
-            {
-                LOG_ERR("jmp argument is not a label");
-                printf("Compilation error at line %lu: jmp or call command don't have the right argument for it\n"
-                       "Note: argument must be a label\n", label_token.line);
+        COMMAND_CASE( SPEC_ARG_CMD,    write_command_with_label(arrays, &token_n, comp_num) );
 
-                return JMP_NOT_STRING;
-            }
-
-            int label_IP = labeldet(labels, label_token.data.string);
-            if (comp_num == 2 && label_IP == -1)
-            {
-                LOG_ERR("label def. not found");
-                printf("Compilation error at line %lu: label \"%s\" definition not found\n", label_token.line, label_token.data.string);
-
-                label_table_print(labels);
-
-                return LABEL_NOT_FOUND;
-            }
-
-            _SECURE(push(bytecode, &label_IP, sizeof(int)));
-            break;
-        }
-
-        case ADD:
-        case SUB:
-        case MULT:
-        case DIV:
-        case SQRT:
-        case IN:
-        case OUT:
-        case HALT:
-        case LOG_A:
-        case LOG_AE:
-        case LOG_E:
-        case LOG_NE:
-        case LOG_B:
-        case LOG_BE:
-        case POW:
-        case RET:
-        case OUTI:
-            LOG("no argument command detected");
-            _SECURE(push(bytecode, &cmd, sizeof(unsigned char)));
-
-            break;
-
+        COMMAND_CASE( GRAPHICAL_CMD,   write_command_with_graphics(arrays, &token_n)        );
+        
         default:
+        {
             LOG_ERR("Command wasn't determined, fatal error");
             printf("Compilation error at line %lu: fatal error, unknown command\n", token->line);
 
-            return FATAL_ERR;
+            return COMMAND_NOT_DET;
+        }
+
         }
     }
 
@@ -138,42 +79,17 @@ int Compiler(AsmArrays *arrays)
     return 0;
 }
 
-int determine_label(Stack <label_t> *labels, token_t *token, const int ip)
+#undef COMMAND_CASE
+
+bool is_command(const token_t *token)
 {
-    assert(labels);
-    assert(token);
-    assert(token->type == STRING);
-
-    char *str_token = token->data.string;
-    char *colon_pointer = strchr(str_token, ':');
-
-    if (colon_pointer)
+    if (!(token->type & CMD))
     {
-        LOG("colon was found in a string token, checking for an existing label");
-        *colon_pointer = '\0';
+        LOG_ERR("token is not a string nor a command");
+        printf("Compilation error at line %lu: line doesn't start with neither string nor command\n", token->line);
 
-        int ret_val = labeldet(labels, str_token);
-        if (ret_val != -1)
-        {
-            LOG_ERR("a label with the same name '%s' is already existing on ip: '%d'", token->data.string, ret_val);
-            printf("Compilation error at line %lu: programm cannot have 2 labels with the same name\n", token->line);
-
-            return SAME_LABEL;
-        }
-
-        label_insert(labels, token->data.string, ip);
-        return LABEL_INSERT;
+        return false;
     }
 
-    int label_IP = labeldet(labels, str_token);
-    if (label_IP != -1)
-    {
-        LOG("a string token is a determined label, continuing");
-        return LABEL_EXIST;
-    }
-
-    LOG_ERR("a string token '%s' is not a label", str_token);
-    printf("Compilation error at line %lu: '%s' is not a label nor a command, check your syntax\n", token->line, str_token);
-
-    return NOT_LABEL;
+    return true;
 }

@@ -85,6 +85,8 @@ enum OPTIONS_STATUS parse_options(const int argc, char *const argv[]) {
     }
   }
 
+  ASM_OPTIONS = res;
+
   if (!res.skip_codegen && !res.output)
   {
     printf("No output file was given, '-o' option to write output file, or '-s' to skip bytecode generation\n");
@@ -100,8 +102,6 @@ enum OPTIONS_STATUS parse_options(const int argc, char *const argv[]) {
 
     return OPTIONS_BAD;
   }
-
-  ASM_OPTIONS = res;
 
   return OPTIONS_OK;
 }

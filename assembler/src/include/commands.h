@@ -3,7 +3,7 @@
 #ifndef ASM_CMDS
 #define ASM_CMDS
 
-#define COMMANDS_NUM 28
+#define COMMANDS_NUM 30
 #define REGISTERS_NUM 4
 
 #define SYNTAX_CH_NUMBER 4
@@ -11,7 +11,7 @@
 typedef struct
 {
     const char *cmd_name;
-    enum MACHINE_CODE cmd_num;
+    enum CommandCodes cmd_num;
     unsigned char cmd_len;
 } cmd_t;
 

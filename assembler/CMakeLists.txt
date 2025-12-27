@@ -5,7 +5,7 @@ project(assembler)
 file(GLOB SRCS ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 file(GLOB HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/include/*.h)
 
-add_executable(assembler ${SRCS} ${HEADERS})
+add_executable(assembler ${SRCS})
 
 target_include_directories(
     assembler

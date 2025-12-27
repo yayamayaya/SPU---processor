@@ -1,0 +1,4 @@
+load ./programms/graphical/pic.txt
+display
+
+halt

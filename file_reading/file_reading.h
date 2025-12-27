@@ -12,4 +12,6 @@ enum FILE_READING_ERRORS {
 
 int file_read(char **buff, size_t *file_size, const char *file_name);
 
+// size_t get_file_size(FILE *file);
+
 #endif
